@@ -1,0 +1,18 @@
+{
+    "name": "JsonUI.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:81df2132d04d2814e9f47275a3912eec"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
