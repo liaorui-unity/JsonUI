@@ -1,0 +1,6 @@
+[submodule "json-ui"]
+	path = json-ui
+	url = E:/Project/lrJsonUI/json-ui
+[submodule "Assets/Json/json-ui"]
+	path = Assets/Json/json-ui
+	url = E:/Project/lrJsonUI/json-ui
