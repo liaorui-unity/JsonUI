@@ -2,14 +2,8 @@ using UnityEngine;
 using System.Collections;
 using UnityEditor;
 using System.IO;
-using System.Text.RegularExpressions;
 using System;
 using System.Collections.Generic;
-using Unity.Plastic.Newtonsoft.Json.Linq;
-using UnityEngine.SceneManagement;
-using Sailfish;
-using NUnit.Framework.Constraints;
-using UnityEngine.WSA;
 using JsonEditorGUI;
 
 
