@@ -15,8 +15,6 @@ namespace Sailfish
         string yStr;
         string zStr;
 
-        string pattern = @"^[0-9.]+$";
-
 
         bool isChange = false;
 
@@ -43,7 +41,7 @@ namespace Sailfish
 
             if (xStr != tempXStr)
             {
-                var match = Regex.Match(tempXStr, pattern);
+                var match = Regex.Match(tempXStr, JsonMono.pattern);
                 if (match.Success)
                 {
                     isChange = true;
@@ -55,7 +53,7 @@ namespace Sailfish
 
             if (yStr != tempYStr)
             {
-                var match = Regex.Match(tempYStr, pattern);
+                var match = Regex.Match(tempYStr, JsonMono.pattern);
                 if (match.Success)
                 {
                     isChange = true;
@@ -67,7 +65,7 @@ namespace Sailfish
 
             if (zStr != tempZStr)
             {
-                var match = Regex.Match(tempZStr, pattern);
+                var match = Regex.Match(tempZStr, JsonMono.pattern);
                 if (match.Success)
                 {
                     isChange = true;
@@ -82,7 +80,6 @@ namespace Sailfish
 
             if (isChange)
             {
-
                 isChange = false;
 
                 if (!float.TryParse(xStr, out float vX))

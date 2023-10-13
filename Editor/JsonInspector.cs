@@ -2,7 +2,6 @@ using UnityEngine;
 using System.Collections;
 using UnityEditor;
 using System.IO;
-using System;
 using System.Collections.Generic;
 using JsonEditorGUI;
 

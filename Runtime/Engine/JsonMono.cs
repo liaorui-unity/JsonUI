@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class JsonMono : MonoBehaviour, ISerializationCallbackReceiver
 {
+    public const string pattern = @"^[0-9.-]+$";
 
     [System.Serializable]
     public class JsonSetting

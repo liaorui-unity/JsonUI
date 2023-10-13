@@ -11,7 +11,6 @@ namespace Sailfish
         string tempStr;
         string valueStr;
 
-        string pattern = @"^[0-9.]+$";
 
         public JsonValueSingle(Type type, object value, string name) : base(type, value, name)
         {
@@ -23,11 +22,11 @@ namespace Sailfish
         {
             if (type == typeof(float))
             {
-                Field((float)value, name);
+                Field<float>();
             }
             else if (type == typeof(int))
             {
-                Field((int)value, name);
+                Field<int>();
             }
             else
             {
@@ -36,7 +35,7 @@ namespace Sailfish
         }
 
 
-        void Field<T>(T value, string name)
+        void Field<T>()
         {
             GUILayout.BeginHorizontal();
             TitleLayout();
@@ -46,7 +45,7 @@ namespace Sailfish
 
             if (valueStr != tempStr)
             {
-                var match = Regex.Match(tempStr, pattern);
+                var match = Regex.Match(tempStr, JsonMono.pattern);
                 if (match.Success)
                 {
                     valueStr = match.Value;
